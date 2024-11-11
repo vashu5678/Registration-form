@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /* background-color: #897fc8; */
+    font-family: sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom right,rgb(119 162 217),rgb(145 106 189));
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main{
+    height: 90vh;
+    width: 70vw;
+    background-color: #ffffff;
+    border-radius: 5px;
+    
+}
+.heading{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.heading::before{
+    content: "";
+    height: 5px;
+    width: 39px;
+    background-image: linear-gradient(to bottom right,rgb(119 162 217),rgb(145 106 189)) ;
+    position: absolute;
+    top: 88px;
+    border-radius: 5px;
+}
+#three{
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.one{
+    text-decoration-line: underline;
+    text-decoration-color: rgb(35, 6, 203);
+    /* background-image: linear-gradient(left to right,rgb(119 162 217),rgb(145 106 189)); */
+}
+.usname{
+    display: flex;
+    margin-left: 30px;
+    margin-top:30px;
+}
+.Username{
+    margin-left: 30px;
+}
+.full{
+    width: 30vw;
+    height: 25px;
+}
+.Phonenumber{
+    margin-left: 30px;
+}
+.confirmpassword{
+    margin-left: 30px;
+}
+
+.fepre{
+    margin-left: 130px;
+}
+.btn{
+    margin-left: 30px;
+    padding: 10px;
+    margin-top: 30px;
+    width: 64vw;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom right,rgb(119 162 217),rgb(145 106 189));
+    border: none;
+    border-radius: 5px;
+}
+input::placeholder{
+    padding-left: 8px;
+}
+.btn:hover{
+  background-image: linear-gradient(to bottom right,rgb(23, 209, 26),rgb(145 106 189));
+
+}
+@media screen and (max-width:850px) {
+    .usname{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .Username{
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    .Phonenumber{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .confirmpassword{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .main{
+        height: auto;
+    }
+    .container{
+        height: auto;
+    }
+    .fepre{
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .btn{
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 60vw;
+    }
+    .full{
+        width:60vw
+    }
+}
